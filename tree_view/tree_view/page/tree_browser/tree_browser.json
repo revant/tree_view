@@ -1,0 +1,35 @@
+{
+ "content": null, 
+ "creation": "2016-04-16 19:31:25.740840", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "icon-sitemap", 
+ "idx": 0, 
+ "modified": "2016-04-16 19:32:08.144492", 
+ "modified_by": "Administrator", 
+ "module": "Tree View", 
+ "name": "Tree Browser", 
+ "owner": "Administrator", 
+ "page_name": "Tree Browser", 
+ "roles": [
+  {
+   "role": "Sales Master Manager"
+  }, 
+  {
+   "role": "Accounts Manager"
+  }, 
+  {
+   "role": "Sales Master Manager"
+  }, 
+  {
+   "role": "Purchase Manager"
+  }, 
+  {
+   "role": "Purchase Master Manager"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "title": ""
+}
