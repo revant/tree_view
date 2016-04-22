@@ -18,7 +18,6 @@ frappe.pages["Tree Browser"].on_page_load = function(wrapper){
 			args: {ctype: ctype},
 			callback: function(r) {
 				var root = r.message[0]["value"];
-				// erpnext.sales_chart = new erpnext.SalesChart
 				frappe.tree_chart = new frappe.TreeChart(ctype, root, page,
 					page.main.css({
 						"min-height": "300px",
@@ -36,7 +35,7 @@ frappe.pages['Tree Browser'].on_page_show = function(wrapper){
 	var ctype = frappe.get_route()[1] || 'Tree';
 
 	wrapper.page.set_title(__('{0} Chart',[__(ctype)]));
-  // if(erpnext.sales_chart && erpnext.sales_chart.ctype != ctype)
+
 	if(frappe.tree_chart && frappe.tree_chart.ctype != ctype) {
 		wrapper.make_tree();
 	}
@@ -44,7 +43,6 @@ frappe.pages['Tree Browser'].on_page_show = function(wrapper){
 	frappe.breadcrumbs.add(frappe.breadcrumbs.last_module || "Tree View");
 };
 
-//erpnext.SalesChart = Class.extend({
 frappe.TreeChart = Class.extend({
 	init: function(ctype, root, page, parent) {
 		$(parent).empty();
@@ -124,12 +122,6 @@ frappe.TreeChart = Class.extend({
 			{fieldtype:'Select', fieldname:'is_group', label:__('Group Node'), options:'No\nYes',
 				description: __("Further nodes can be only created under 'Group' type nodes")}
 		]
-
-		// used for Sales Person
-		// if(me.ctype == "Sales Person") {
-		// 	fields.splice(-1, 0, {fieldtype:'Link', fieldname:'employee', label:__('Employee'),
-		// 		options:'Employee', description: __("Please enter Employee Id of this sales person")});
-		// }
 
 		// the dialog
 		var d = new frappe.ui.Dialog({

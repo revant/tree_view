@@ -31,7 +31,5 @@ def add_node():
 		parent_field: frappe.form_dict['parent'],
 		"is_group": frappe.form_dict['is_group']
 	})
-	# if ctype == "Sales Person":
-	# 	doc.employee = frappe.form_dict.get('employee')
 
 	doc.save()
