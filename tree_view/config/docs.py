@@ -2,10 +2,10 @@
 Configuration for docs
 """
 
-# source_link = "https://github.com/[org_name]/tree_view"
-# docs_base_url = "https://[org_name].github.io/tree_view"
-# headline = "App that does everything"
-# sub_heading = "Yes, you got that right the first time, everything"
+source_link = "https://github.com/revant/tree_view"
+docs_base_url = "https://revant.github.io/tree_view"
+headline = "Tree View for a DocType"
+sub_heading = "DocType and a Browser Page"
 
 def get_context(context):
-	context.brand_html = "Tree View"
+	pass
