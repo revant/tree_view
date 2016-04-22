@@ -111,3 +111,4 @@ app_license = "GPL v3"
 # 	"frappe.desk.doctype.event.event.get_events": "tree_view.event.get_events"
 # }
 
+fixtures = ["Tree"]
